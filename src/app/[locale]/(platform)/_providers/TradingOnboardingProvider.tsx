@@ -35,7 +35,6 @@ import {
   CTF_EXCHANGE_ADDRESS,
   NEG_RISK_CTF_EXCHANGE_ADDRESS,
   UMA_NEG_RISK_ADAPTER_ADDRESS,
-  UMA_NEG_RISK_ADAPTER_LEGACY_ADDRESS,
 } from '@/lib/contracts'
 import { fetchReferralLocked } from '@/lib/exchange'
 import {
@@ -656,13 +655,11 @@ function TradingOnboardingProviderContent({
       CTF_EXCHANGE_ADDRESS,
       NEG_RISK_CTF_EXCHANGE_ADDRESS,
       UMA_NEG_RISK_ADAPTER_ADDRESS,
-      UMA_NEG_RISK_ADAPTER_LEGACY_ADDRESS,
     ] as const
     const conditionalOperators = [
       CTF_EXCHANGE_ADDRESS,
       NEG_RISK_CTF_EXCHANGE_ADDRESS,
       UMA_NEG_RISK_ADAPTER_ADDRESS,
-      UMA_NEG_RISK_ADAPTER_LEGACY_ADDRESS,
     ] as const
 
     const [allowances, operatorApprovals] = await Promise.all([
